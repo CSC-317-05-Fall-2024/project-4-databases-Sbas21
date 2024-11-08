@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kuala Lumpur</title>
+    <link rel="icon" type="image/svg" href="/images/icon.svg">
+    <link rel="stylesheet" href="/restaurant-details-styles.css">
+</head>
+<body>
+    <div class="restaurant-details-container">
+        <header></header>
+        <nav></nav>
+        <div class="restaurant-details">
+            <h1><%= restaurant.name %></h1>
+            <div class="restaurant-details-context">
+                <img class="restaurant-details-img" src="<%= restaurant.photo %>">
+                <br><p>Address: <%= restaurant.address %></p><br>
+                <p>Phone: <%= restaurant.phone %></p>
+                <h3>Reviews</h3>
+                <% if (reviews.length > 0) { %>
+                    <% reviews.forEach(review => { %>
+                        <p>
+                            Rating: <%= review.rating %> / 5 <br>
+                            Review: <%= review.content %>
+                        </p>
+                        <p>---------------------------------------------</p>
+                        <% }) %>
+                        <% } else { %>
+                            <p>No reviews available for this restaurant.</p>
+                            <% } %>
+                        </div>
+                    </div>
+                    <footer></footer>
+                </div>
+                <script src="/scripts/header.js"></script>
+            </body>
+            </html>
+            

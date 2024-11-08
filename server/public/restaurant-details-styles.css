@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*picture of the image behind the "kuala lumpur" */
+.banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    h1{
+        position: absolute;
+        font-size: 64px; 
+        color: white; 
+    }
+}
+
+/* Navigation Styling (Populated by header.js) */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #041829;
+    padding: 10px;
+    
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+/* Restaurant Details Container */
+.restaurant-details-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f1e7;
+    
+}
+
+/* Content Wrap */
+.restaurant-details {
+    padding: 32px;
+    max-width: 800px;
+    margin: 50px auto; 
+    text-align: center; 
+    background-color: #f3f1e7;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+/* Restaurant Image Styling */
+.restaurant-details-img {
+    width: 200px; 
+    height: 200px; 
+    margin:auto; 
+    display: block; 
+}
+
+/* Restaurant Details Content */
+.restaurant-details-context {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.restaurant-details-context h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #041829;
+}
+
+.restaurant-details-context p {
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Footer (Populated by header.js) */
+footer {
+    background-color: #1a3d5c;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    margin-top: auto; 
+}
